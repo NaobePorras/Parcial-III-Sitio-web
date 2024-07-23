@@ -79,15 +79,30 @@
         .img-container {
             margin-top: 1rem;
         }
+     /* Ajustes para dispositivos móviles */
+        @media (max-width: 768px) {
+            #sidebarToggle {
+                position: absolute;
+                top: 10px; /* Ajusta este valor si es necesario */
+                right: 10px; /* Ajusta este valor si es necesario */
+                z-index: 1050; /* Asegúrate de que esté encima de otros elementos */
+            }
+
+            .navbar-brand {
+                margin-right: 60px; /* Ajusta este valor para evitar solapamiento */
+            }
+        }
     </style>
 </head>
 
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Sidebar Toggle-->
-        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!">
+            <i class="fas fa-bars"></i>
+        </button>
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-2" href="index.html">Seguridad de la Información</a>
+        <a class="navbar-brand ps-2" href="index.html"> </a>
     </nav>
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
