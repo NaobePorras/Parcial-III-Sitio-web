@@ -15,7 +15,7 @@
         #layoutSidenav_nav {
             position: -webkit-sticky; /* Para Safari */
             position: sticky;
-            top: 0; 
+            top: 0;
             height: 100vh; /* Para que ocupe toda la altura de la ventana */
             overflow-y: auto; /* Para permitir el desplazamiento vertical si el contenido excede la altura */
         }
@@ -57,17 +57,43 @@
         .card-body {
             padding: 2rem;
         }
-    /* Ajustes para dispositivos móviles */
-    @media (max-width: 768px) {
+
+        /* Estilo para el bloque de imagen y texto */
+        .image-text-block {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .image-text-block img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+        }
+
+        .image-text-block p {
+            font-size: 14px;
+            color: #555;
+            text-align: justify;
+            margin: 1rem auto 0; /* Añadido margen superior para separación */
+            max-width: 90%; /* Asegura que el texto no sea más ancho que el contenedor */
+        }
+
+        /* Ajustes para dispositivos móviles */
+        @media (max-width: 768px) {
             #sidebarToggle {
                 position: absolute;
-                top: 10px; 
-                right: 10px; 
-                z-index: 1050; 
+                top: 10px;
+                right: 10px;
+                z-index: 1050;
             }
 
             .navbar-brand {
-                margin-right: 60px; 
+                margin-right: 60px;
+            }
+
+            .image-text-block p {
+                font-size: 12px; /* Tamaño de fuente ajustado para móviles */
+                margin: 0.5rem auto; /* Menor margen en móviles */
             }
         }
     </style>
@@ -171,14 +197,12 @@
                                     Estos conceptos son fundamentales para comprender la relación entre la tecnología y la ética, así como para protegerse y proteger a otros de los riesgos asociados con el uso de las tecnologías digitales.
                                 </p>
 
-                                <div style="text-align: center;">
-                                    <img src="assets/img/etica.jpg" class="img-fluid" alt="..." style="width: 400px;">
-                                    <div style="width: 400px; margin: 0 auto;">
-                                        <p style="font-size: 14px; color: #555; text-align: justify;">
-                                            Alexandra, (2016, December 12). ÉTICA INFORMÁTICA . Diseño Y Auditoría De Sistemas.
-                                            <a href="https://das6sa3.wordpress.com/2016/12/10/la-etica-informatica/" target="_blank">https://das6sa3.wordpress.com/</a>
-                                        </p>
-                                    </div>
+                                <div class="image-text-block">
+                                    <img src="assets/img/etica.jpg" alt="Ética Informática">
+                                    <p>
+                                        Alexandra, (2016, December 12). ÉTICA INFORMÁTICA . Diseño Y Auditoría De Sistemas.
+                                        <a href="https://das6sa3.wordpress.com/2016/12/10/la-etica-informatica/" target="_blank">https://das6sa3.wordpress.com/</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
