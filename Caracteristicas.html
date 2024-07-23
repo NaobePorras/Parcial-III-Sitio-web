@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Seguridad de la Información Unidad III | NNPM</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <style>
+        /* Estilo para la barra lateral */
+        #layoutSidenav_nav {
+            position: -webkit-sticky; /* Para Safari */
+            position: sticky;
+            top: 0; /* Ajusta este valor según el espacio que quieras dejar arriba */
+            height: 100vh; /* Para que ocupe toda la altura de la ventana */
+            overflow-y: auto; /* Para permitir el desplazamiento vertical si el contenido excede la altura */
+        }
+
+        /* Estilo para los encabezados */
+        h1, h3 {
+            color: #333;
+        }
+
+        /* Estilo para los párrafos */
+        p {
+            text-align: justify;
+            margin-bottom: 1rem;
+        }
+
+        /* Estilo para los enlaces */
+        a {
+            color: #007bff;
+        }
+
+        a:hover {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        /* Estilo para las tarjetas */
+        .card {
+            border: none;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body {
+            padding: 2rem;
+        }
+
+        /* Estilo para listas dentro de las tarjetas */
+        ul {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-2" href="index.html">Seguridad de la Información</a>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">Menu</div>
+                        <a class="nav-link" href="index.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
+                            Introducción
+                        </a>
+                        <div class="sb-sidenav-menu-heading">Temas</div>
+
+                        <!-- Legislación informática -->
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLegislacion" aria-expanded="false" aria-controls="collapseLegislacion">
+                            <div class="sb-nav-link-icon"><i class="fas fa-balance-scale"></i></div>
+                            Legislación informática
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseLegislacion" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="Legislación-informatica.html">Legislación Informática</a>
+                                <a class="nav-link" href="Leyes-Nacionales.html">Leyes Nacionales</a>
+                                <a class="nav-link" href="Registro-Obras.html">Registro de Obras y Avisos de Privacidad</a>
+                            </nav>
+                        </div>
+
+                        <!-- Ética informática y delitos informáticos -->
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseEtica" aria-expanded="false" aria-controls="collapseEtica">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
+                            Ética informática y delitos informáticos
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseEtica" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="Etica-informa.html">Ética Informática y Delitos informáticos</a>
+                                <a class="nav-link" href="Caracteristicas.html">Características de los Delitos Informáticos</a>
+                            </nav>
+                        </div>
+
+                        <a class="nav-link" href="Conclusiones.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            Conclusiones y Referencias
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid px-4">
+                    <h1 class="mt-4">2.2 Características de los delitos informáticos tipificados en México</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a href="index.html">Menu</a></li>
+                        <li class="breadcrumb-item active">Características de los delitos informáticos</li>
+                    </ol>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="container">
+                                <p>
+                                    En México, los delitos informáticos están regulados por el Código Penal Federal y otras leyes específicas. Los delitos informáticos en México se caracterizan por:
+                                </p>
+                                <ul>
+                                    <li><b>Acceso no autorizado a sistemas y datos:</b> Acceder sin autorización a sistemas informáticos, redes o bases de datos, así como la obtención, modificación o eliminación de información sin consentimiento.</li>
+                                    <li><b>Interferencia con sistemas y datos:</b> Causar daños, alteraciones o interrupciones a sistemas informáticos o datos, incluyendo la introducción de malware o la realización de ataques de denegación de servicio (DoS).</li>
+                                    <li><b>Fraude electrónico:</b> Utilizar medios electrónicos para cometer fraudes, como el uso de tarjetas de crédito robadas o la creación de sitios web falsos para obtener información personal o financiera de manera fraudulenta.</li>
+                                    <li><b>Suplantación de identidad:</b> Obtener y utilizar datos personales de otra persona sin su consentimiento, con el fin de cometer delitos como fraudes o robos de identidad.</li>
+                                    <li><b>Distribución de material prohibido:</b> Distribuir, almacenar o compartir material ilegal a través de medios electrónicos, como pornografía infantil o contenido protegido por derechos de autor sin autorización.</li>
+                                    <li><b>Espionaje cibernético:</b> Obtener información confidencial de entidades gubernamentales o corporativas con el fin de espiar, sabotear o cometer otros actos delictivos.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="container">
+                                <h3 class="font-weight-light">2.3 Aspectos Legales Relacionados con Delitos Informáticos en México</h3>
+                                <p>
+                                    En México, varios aspectos legales regulan y sancionan los delitos informáticos. Entre las leyes y normativas más relevantes se encuentran:
+                                </p>
+                                <ul>
+                                    <li><b>Código Penal Federal:</b> Tipifica varios delitos informáticos y establece sanciones para conductas como el acceso no autorizado a sistemas, la alteración de datos, el fraude electrónico y la distribución de malware.</li>
+                                    <li><b>Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP):</b> Regula el tratamiento de datos personales por parte de entidades privadas y establece obligaciones para proteger la privacidad y la seguridad de los datos personales.</li>
+                                    <li><b>Ley de la Propiedad Industrial:</b> Protege la propiedad intelectual y sanciona el uso no autorizado de software y otros recursos digitales.</li>
+                                    <li><b>Ley de Derechos de Autor:</b> Protege los derechos de los creadores y sanciona la reproducción y distribución no autorizada de obras protegidas por derechos de autor.</li>
+                                    <li><b>Ley de Instituciones de Crédito:</b> Establece medidas de seguridad y sanciones para proteger las transacciones financieras electrónicas y prevenir fraudes electrónicos.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="container">
+                                <h3 class="font-weight-light">2.4 Proceso de elaboración de códigos de conducta y ética informática</h3>
+                                <p>
+                                    Elaborar un código de conducta y ética informática es un proceso importante para establecer estándares claros de comportamiento y responsabilidad en el uso de tecnologías de la información. El proceso puede seguir estos pasos:
+                                </p>
+                                <ol>
+                                    <li><b>Identificación de Necesidades:</b> Determinar las necesidades y objetivos del código de conducta, considerando los valores de la organización, las normativas legales y las mejores prácticas del sector.</li>
+                                    <li><b>Formación de un Comité:</b> Crear un comité responsable de la elaboración del código, compuesto por representantes de diferentes áreas de la organización, incluyendo TI, recursos humanos, legal y administración.</li>
+                                    <li><b>Revisión de Normativas y Mejores Prácticas:</b> Investigar y revisar normativas legales, estándares internacionales y códigos de conducta de otras organizaciones para identificar principios y prácticas relevantes.</li>
+                                    <li><b>Redacción del Borrador:</b> Desarrollar un borrador del código de conducta que incluya secciones sobre responsabilidad profesional, privacidad, seguridad, transparencia y respeto a la propiedad intelectual.</li>
+                                    <li><b>Consulta y Revisión:</b> Consultar con empleados y otros interesados para obtener retroalimentación sobre el borrador y hacer ajustes según sea necesario.</li>
+                                    <li><b>Aprobación:</b> Presentar el código revisado al liderazgo de la organización para su aprobación formal.</li>
+                                    <li><b>Comunicación y Capacitación:</b> Comunicar el código de conducta a todos los empleados y proporcionar capacitación para asegurar su comprensión y cumplimiento.</li>
+                                    <li><b>Implementación y Monitoreo:</b> Implementar el código y establecer mecanismos para monitorear su cumplimiento, incluyendo la creación de canales para reportar violaciones y la realización de auditorías periódicas.</li>
+                                    <li><b>Revisión y Actualización:</b> Revisar y actualizar el código de conducta regularmente para asegurar que siga siendo relevante y efectivo frente a cambios en la tecnología y la normativa legal.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-center small">
+                        <div class="text-muted">Copyright &copy; Tecámac, Estado de México a 31 de Julio 2024</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

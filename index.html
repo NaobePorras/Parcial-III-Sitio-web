@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Naobe Nicole Porras Millán" />
+    <title>Seguridad de la Información Unidad III | NNPM</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <style>
+        /* Estilo para la barra lateral */
+        #layoutSidenav_nav {
+            position: -webkit-sticky; /* Para Safari */
+            position: sticky;
+            top: 0; /* Ajusta este valor según el espacio que quieras dejar arriba */
+            height: 100vh; /* Para que ocupe toda la altura de la ventana */
+            overflow-y: auto; /* Para permitir el desplazamiento vertical si el contenido excede la altura */
+            background-color: #343a40; /* Fondo oscuro para la barra lateral */
+        }
+
+        /* Estilo para el enlace activo */
+        .nav-link.active {
+            background-color: #007bff; /* Color de fondo cuando el enlace está activo */
+            color: #ffffff; /* Color del texto cuando el enlace está activo */
+        }
+
+        /* Estilo para los botones */
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+
+        /* Estilo para las tarjetas */
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-body {
+            padding: 2rem;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .card-footer {
+            background-color: #f8f9fa;
+            border-top: none;
+        }
+
+        /* Estilo para el pie de página */
+        footer {
+            background-color: #f8f9fa;
+            color: #6c757d;
+        }
+
+        /* Estilo para los textos */
+        h1, h4, h5 {
+            color: #343a40;
+        }
+
+        p {
+            color: #495057;
+        }
+
+        /* Estilo para las imágenes */
+        .img-fluid {
+            border-radius: 15px;
+        }
+
+        /* Estilo para las tarjetas expandidas */
+        .card.expanded {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!">
+            <i class="fas fa-bars"></i>
+        </button>
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-2" href="index.html">Seguridad de la Información</a>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">Menu</div>
+                        <a class="nav-link" href="index.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
+                            Introducción
+                        </a>
+                        <div class="sb-sidenav-menu-heading">Temas</div>
+
+                        <!-- Legislación informática -->
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                            data-bs-target="#collapseLegislacion" aria-expanded="false"
+                            aria-controls="collapseLegislacion">
+                            <div class="sb-nav-link-icon"><i class="fas fa-balance-scale"></i></div>
+                            Legislación informática
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseLegislacion" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="Legislación-informatica.html">Legislación Informática</a>
+                                <a class="nav-link" href="Leyes-Nacionales.html">Leyes Nacionales</a>
+                                <a class="nav-link" href="Registro-Obras.html">Registro de Obras y Avisos de Privacidad</a>
+                            </nav>
+                        </div>
+
+                        <!-- Ética informática y delitos informáticos -->
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseEtica"
+                            aria-expanded="false" aria-controls="collapseEtica">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
+                            Ética informática y delitos informáticos
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseEtica" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="Etica-informa.html">Ética Informática y Delitos informáticos</a>
+                                <a class="nav-link" href="Caracteristicas.html">Características de los Delitos Informáticos</a>
+                            </nav>
+                        </div>
+
+                        <a class="nav-link" href="Conclusiones.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            Conclusiones y Referencias
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container px-4 px-lg-5">
+                    <!-- Heading Row-->
+                    <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                        <div class="col-lg-7">
+                            <img class="img-fluid rounded mb-4 mb-lg-0" src="assets/img/portadaEscolar.png" alt="..." />
+                        </div>
+                        <div class="col-lg-5">
+                            <h1 class="font-weight-light">Introducción</h1>
+                            <p style="text-align: justify;">En el ámbito de la seguridad de la información, comprender la legislación y la ética informática es esencial. La legislación abarca los derechos de autor, la privacidad y la protección de datos, asegurando que las obras creativas y la información personal estén legalmente protegidas. Las leyes nacionales e internacionales regulan estos aspectos, y es crucial conocer los trámites y requisitos para registrar obras y elaborar avisos de privacidad.
+
+                                La ética informática se centra en los principios que guían el uso responsable de la tecnología, mientras que los delitos informáticos incluyen actividades ilegales como el hacking y el fraude. En México, es importante entender las características y las leyes que regulan estos delitos. Además, la creación de códigos de conducta y ética informática dentro de las organizaciones fomenta un comportamiento ético y responsable en el uso de la tecnología.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Call to Action -->
+                    <div class="card text-white bg-secondary my-5 py-4 text-center">
+                        <div class="card-body">
+                            <p class="text-white m-0">En este sitio web abordaremos los siguientes temas:</p>
+                        </div>
+                    </div>
+                    <!-- Content Row -->
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-md-4 mb-5">
+                            <div class="card h-100" data-card="card1">
+                                <div class="card-body">
+                                    <h4 class="card-title">1. Legislación informática</h4>
+                                    <h5>1.1 Derechos de autor, privacidad y protección de datos</h5>
+                                    <p class="card-text">Regulaciones que gobiernan el uso de la tecnología y la informática.</p>
+                                </div>
+                                <div class="card-footer"><a class="btn btn-primary btn-sm" href="Legislación-informatica.html">Más...</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <div class="card h-100" data-card="card2">
+                                <div class="card-body">
+                                    <h4 class="card-title">1.2 Leyes nacionales e internacionales</h4>
+                                    <h5>1.3 Registro de obras</h5>
+                                    <p class="card-text">Leyes aplicables a derechos de autor y protección de datos.</p>
+                                </div>
+                                <div class="card-footer"><a class="btn btn-primary btn-sm" href="Leyes-Nacionales.html">Más...</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <div class="card h-100" data-card="card3">
+                                <div class="card-body">
+                                    <h4 class="card-title">1.4 Registro de obras y avisos de privacidad</h4>
+                                    <h5>Proceso y requisitos</h5>
+                                    <p class="card-text">Procedimientos para registro de obras y elaboración de avisos de privacidad.</p>
+                                </div>
+                                <div class="card-footer"><a class="btn btn-primary btn-sm" href="Registro-Obras.html">Más...</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <div class="card h-100" data-card="card4">
+                                <div class="card-body">
+                                    <h4 class="card-title">2. Ética informática y delitos</h4>
+                                    <h5>2.1 Conceptos clave</h5>
+                                    <p class="card-text">Ética en la informática y definición de delitos informáticos.</p>
+                                </div>
+                                <div class="card-footer"><a class="btn btn-primary btn-sm" href="Etica-informa.html">Más...</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <div class="card h-100" data-card="card5">
+                                <div class="card-body">
+                                    <h4 class="card-title">2.2 Delitos informáticos en México</h4>
+                                    <h5>2.3 Aspectos legales</h5>
+                                    <h6>2.4 Códigos de conducta</h6>
+                                    <p class="card-text">Características y aspectos legales de los delitos informáticos en México.</p>
+                                </div>
+                                <div class="card-footer"><a class="btn btn-primary btn-sm" href="Caracteristicas.html">Más...</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-center small">
+                        <div class="text-muted">Copyright &copy; Tecámac, Estado de México a 31 de Julio 2024</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="assets/demo/chart-area-demo.js"></script>
+    <script src="assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Remove 'expanded' class from all cards
+                    cards.forEach(c => c.classList.remove('expanded'));
+                    // Add 'expanded' class to the clicked card
+                    this.classList.add('expanded');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
