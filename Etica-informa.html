@@ -15,7 +15,7 @@
         #layoutSidenav_nav {
             position: -webkit-sticky; /* Para Safari */
             position: sticky;
-            top: 0; /* Ajusta este valor según el espacio que quieras dejar arriba */
+            top: 0; 
             height: 100vh; /* Para que ocupe toda la altura de la ventana */
             overflow-y: auto; /* Para permitir el desplazamiento vertical si el contenido excede la altura */
         }
@@ -57,13 +57,28 @@
         .card-body {
             padding: 2rem;
         }
+    /* Ajustes para dispositivos móviles */
+        @media (max-width: 768px) {
+            #sidebarToggle {
+                position: absolute;
+                top: 10px; 
+                right: 10px; 
+                z-index: 1050; 
+            }
+
+            .navbar-brand {
+                margin-right: 60px; 
+            }
+        }
     </style>
 </head>
 
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Sidebar Toggle-->
-        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!">
+            <i class="fas fa-bars"></i>
+        </button>
         <!-- Navbar Brand-->
         <a class="navbar-brand ps-2" href="index.html">Seguridad de la Información</a>
     </nav>
