@@ -59,21 +59,15 @@
         }
 
         /* Estilo para el bloque de imagen y texto */
-        .image-text-block {
-            text-align: center;
-            margin: 0 auto;
+        .text-center img {
+            width: 400px; /* Tamaño fijo para la imagen */
+            border-radius: 0.5rem; /* Bordes redondeados para la imagen */
         }
 
-        .image-text-block img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 0.5rem;
-        }
-
-        .image-text-block p {
+        .text-center p {
             font-size: 14px;
             color: #555;
-            text-align: justify;
+            text-align: center;
             margin: 1rem auto 0; /* Añadido margen superior para separación */
             max-width: 90%; /* Asegura que el texto no sea más ancho que el contenedor */
         }
@@ -91,7 +85,7 @@
                 margin-right: 60px;
             }
 
-            .image-text-block p {
+            .text-center p {
                 font-size: 12px; /* Tamaño de fuente ajustado para móviles */
                 margin: 0.5rem auto; /* Menor margen en móviles */
             }
@@ -197,10 +191,9 @@
                                     Estos conceptos son fundamentales para comprender la relación entre la tecnología y la ética, así como para protegerse y proteger a otros de los riesgos asociados con el uso de las tecnologías digitales.
                                 </p>
 
-                                <div class="image-text-block">
-                                    <img src="assets/img/etica.jpg" alt="Ética Informática">
-                                    <p>
-                                        Alexandra, (2016, December 12). ÉTICA INFORMÁTICA . Diseño Y Auditoría De Sistemas.
+                                <div class="text-center">
+                                    <img src="assets/img/etica.jpg" class="img-fluid rounded mb-4" alt="Ética Informática"style="width: 400px;">
+                                    <p style="font-size: 14px; color: #555; text-align: center;"> Alexandra, (2016, December 12). ÉTICA INFORMÁTICA. Diseño Y Auditoría De Sistemas.
                                         <a href="https://das6sa3.wordpress.com/2016/12/10/la-etica-informatica/" target="_blank">https://das6sa3.wordpress.com/</a>
                                     </p>
                                 </div>
